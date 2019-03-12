@@ -28,6 +28,15 @@
     #bratop-mobile .btn-container{
         margin-top: -10px;
     }
+    #bratop-mobile .btn-container button{
+        font-family: 'uniqlo pro regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 10px 5px;
+        color: #444;
+        cursor: pointer;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
     #bratop-mobile .btn-link{
         background-color: transparent;
         height: 9%;
@@ -41,7 +50,6 @@
         position: relative;
     }
 </style>
-<body>
     <div id="bratop-mobile">
         <img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_01" alt="" srcset="">
         <img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_02" alt="" srcset="">
@@ -50,11 +58,19 @@
             <img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_03" alt="" srcset="">
         </div>
         <img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_04" alt="" srcset="">
-        <div class="btn-container flex">
+        <!-- <div class="btn-container flex">
             <button><img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_05" alt="" srcset=""></button>
             <button><img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_06" alt="" srcset=""></button>
+        </div> -->
+        <div class="btn-container flex">
+            <button id="airism-btn" style="border: 2px solid #009EE7">
+                    <img style="width:100px;margin: 0"src="//uniqlo.scene7.com/is/image/UNIQLO/airism_2019_logo?$png$" alt="" srcset="">
+            </button>
+                <button id="cotton-btn" style="border: 2px solid #000">
+                        Cotton
+                </button>
         </div>
-        <div style="margin-bottom: -5px;" class="image-block">
+        <div id="airism-section" style="margin-bottom: -5px;" class="image-block">
             <img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_07" alt="" srcset="">
             <a class="btn-link" href="https://www.uniqlo.com/us/en/women-airism-seamless-v-neck-bra-camisole-413572.html?dwvar_413572_color=COL33" ></a>
         </div>
@@ -76,11 +92,23 @@
             <a style="bottom: 40px;" class="btn-link" href="https://www.uniqlo.com/us/en/women-ribbed-lace-bra-sleeveless-top-414000.html?dwvar_414000_color=COL03"></a>
 
         </div>
-        <div class="image-block">
+        <div id="cotton-section"class="image-block">
             <img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_13" alt="" srcset="">
             <a style="bottom: 10px;"  class="btn-link" href="https://www.uniqlo.com/us/en/women-supima-cotton-bra-sleeveless-top-413566.html?dwvar_413566_color=COL03" ></a>
         </div>
         <img src="https://uniqlo.scene7.com/is/image/UNIQLO/us_sp_bratop_022619_2_14" alt="" srcset="">
     </div>
-</body>
+
+    <script>
+        $("#airism-btn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#airism-section").offset().top - 15
+            }, 1000);
+        });
+        $("#cotton-btn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#cotton-section").offset().top 
+            }, 1500);
+        });
+        </script>
 </html> 
