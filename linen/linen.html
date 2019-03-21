@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        div #content button{
+            border: none;
+        }
+
+        div#content {
+            background-color: #fff;
+        }
+
+        div#linen {
+            font-family: Helvetica, Arial,  sans-serif;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #77807b;
+        }
+
+        div#linen img {
+            width: 100%;
+        }
+
+        div#linen .pcParts {
+            display: none !important;
+        }
+
+        /* cover */
+        #linen .cover {
+            margin: 0 0 16vw 0;
+            position: relative;
+        }
+
+        #linen .cover h1 {
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        #linen-collection-page  hr  {
+            height: 60px;
+            width: 1px;
+            border: none;
+            background-color: #8d979c;
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            margin: 0;
+        }
+        #linen-collection-page .cover{
+            position: relative;
+        }
+        
+
+        #linen .cover .coverslider,
+        #linen .cover .coverslider li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* statement */
+        #linen .statement {
+            margin: 0 4vw 12vw 4vw;
+        }
+
+        #linen .statement h2 {
+            margin: 0 0 4vw 0;
+            padding: 0;
+            font-size: 19px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        #linen .statement .textBox {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* anker */
+        #linen .anker {
+            margin: 0 0 12vw 0;
+        }
+
+        #linen .anker ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 2vw;
+            overflow: hidden;
+        }
+
+        #linen .anker li {
+            margin: 0 2vw 0 2vw;
+            padding: 0;
+            float: left;
+            width: 28vw;
+            text-align: center;
+        }
+
+        #linen .anker a {
+            text-decoration: none;
+            color: #77807b;
+            text-align: center;
+        }
+
+        #linen .anker dl {
+            margin: 0;
+            padding: 0;
+        }
+
+        #linen .anker dt {
+            margin: 0;
+            padding: 0 0 6vw 0;
+            background-image: url("../images/190226-19SS_linen_w_sp_link-icon-arrow-down.png");
+            background-repeat: no-repeat;
+            background-position: center bottom 3vw;
+            background-size: 3vw;
+        }
+
+        #linen .anker dd {
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        /* itemarea */
+        #linen .categoryHeader {}
+
+        #linen .categoryHeader .imageBox {
+            margin: 0 0 8vw 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        p.imageBox {}
+
+        p.imageBox {}
+
+        #linen .categoryHeader h2 {
+            font-size: 12px;
+            text-align: center;
+            padding: 0;
+            margin: 0 0 8vw 0;
+            font-weight: normal;
+        }
+
+        #linen .categoryHeader h2 img {
+            height: 22px;
+            display: block;
+            margin: 0 auto 2vw auto;
+            width: auto;
+        }
+
+        #linen .categoryHeader .textBox {
+            margin: 0 4vw 8vw 4vw;
+            padding: 0;
+        }
+
+        #linen .itemSet {
+            margin: 0 20vw 16vw 4vw;
+        }
+
+        #linen .itemSet.right {
+            margin: 0 4vw 16vw 20vw;
+        }
+
+        #linen .itemSet h3 {
+            padding: 0;
+            font-size: 15px;
+            font-weight: normal;
+            margin: 0 0 4vw 0;
+        }
+
+        #linen .itemSet .imageBox {
+            margin: 0 0 4vw 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        #linen .itemSet .textBox {
+            padding: 0;
+            margin: 0 0 4vw 0;
+        }
+
+        #linen .itemSet .linksList {
+            padding: 0;
+            margin: 0 0 4vw 0;
+            list-style: none;
+        }
+
+        #linen .itemSet .linksList li {
+            padding: 0;
+            margin: 0 0 2vw 0;
+        }
+
+        #linen .itemSet .linksList a {
+            color: #77807b;
+        }
+
+        #linen .itemSet .slider {
+            padding: 0;
+            line-height: 0;
+            margin: 0 0 4vw 0;
+        }
+
+        /* banner */
+        #linen .bannerSection {
+            margin: 0;
+            padding: 0 0 16vw 0;
+        }
+
+        #linen .bannerSection h2 {
+            margin: 0 0 8vw 0;
+            padding: 0;
+            text-align: center;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        #linen .bannerSection a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #77807b;
+            display: block;
+            margin: 0 0 4vw 0;
+        }
+
+        #linen .bannerSection>dl+h2 {
+            margin-top: 16vw;
+        }
+
+        #linen .bannerSection dl {
+            margin: 0 4vw 0 4vw;
+            padding: 0;
+        }
+
+        #linen .bannerSection dt {
+            margin: 0 0 2vw 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        #linen .bannerSection dd {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* parts */
+        #linen .linkBtn {
+            margin: 0 4vw 16vw 4vw;
+            padding: 0;
+        }
+
+        #linen .linkBtn a {
+            display: block;
+            padding: 4vw;
+            border: #77807b 1px solid;
+            text-align: center;
+            color: #77807b;
+            text-decoration: none;
+            font-size: 14px;
+            background-color: #fff;
+        }
+
+        a {}
+
+        #linen .linkBtn span {
+            background-image: url(../images/190226-19SS_linen_w_sp_link-icon-arrow-right.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 8px;
+            padding: 0 20px 0 0;
+            display: inline-block;
+            text-align: left;
+        }
+
+        #linen .linkBtn.solid {}
+
+        #linen .linkBtn.solid a {
+            background-color: #77807b;
+            color: #ffffff;
+        }
+
+        #linen .linkBtn.solid span {
+            background-image: url("../images/190226-19SS_linen_w_sp_link-icon-arrow-right_white.png");
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 8px;
+            padding: 0 20px 0 0;
+        }
+
+        /* pagetop */
+
+        #content .pagetop {
+            width: 42px;
+            height: 42px;
+            position: fixed;
+            bottom: 4vw;
+            right: 4vw;
+            cursor: pointer;
+            -webkit-transition: opacity 0.4s;
+            -o-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+            z-index: 100;
+        }
+
+        #content .pagetop:hover {
+            opacity: 0.8;
+        }
+
+        #content .js-pagetop {
+            display: none;
+        }
+
+        #content .js-pagetop img {
+            max-width: 100%;
+        }
+
+        #content .bx-wrapper {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: none;
+            background: transparent;
+        }
+
+        #linen .txtLink {
+            display: none;
+        }
+
+        #linen-collection-page .slick-dots {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 1rem 0;
+            list-style-type: none;
+        }
+
+        #linen-collection-page .slick-dots li {
+            margin: 0 0.25rem;
+        }
+
+        #linen-collection-page .slick-dots button {
+            display: block;
+            width: 8px;
+            height: 8px;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
+            border: 1px solid #000;
+            border-radius: 100%;
+            background-color: transparent;
+
+            text-indent: -9999px;
+        }
+
+        #linen-collection-page .slick-dots li.slick-active button {
+            background-color: black;
+        }
+
+        #linen-collection-page .slick-arrow {
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background: transparent;
+            position: absolute;
+            top: calc(50% - 69px);
+            z-index: 100;
+
+        }
+
+        #linen-collection-page button.slick-next,
+        button.slick-arrow.slick-next:hover,
+        button.slick-arrow.slick-next:focus {
+            width: 15px;
+            height: 69px;
+            right: 15px;
+            background: url(https://www.uniqlo.com/na-static/on/demandware.static/Sites-UniqloUS-Site/-/default/v1504016526668/images/sprite-uniqlo.png) -108px -819px no-repeat;
+        }
+
+        #linen-collection-page button.slick-prev,
+        button.slick-arrow.slick-prec:hover,
+        button.slick-arrow.slick-prev:focus {
+            width: 15px;
+            height: 69px;
+            left: 15px;
+            background: url(https://www.uniqlo.com/na-static/on/demandware.static/Sites-UniqloUS-Site/-/default/v1504016526668/images/sprite-uniqlo.png) -97px -727px no-repeat;
+        }
+
+
+
+
+        #linen-collection-page {
+            width: 100%;
+            font-family: Helvetica, sans-serif
+        }
+
+
+        #linen-collection-page .hero-slider,
+        #linen-collection-page .product-slider {
+            padding: 0;
+        }
+        #linen-collection-page .hero-slider,
+        .slick-slide img{
+            width: 100%;
+            display: block;
+        }
+
+        #linen .itemSet .linkBtn{
+             margin: 0 ;
+        }
+        
+    </style>
+    <div id="linen-collection-page">
+
+
+        <div id="content">
+
+            <div class="section cover">
+                <h1>
+                    <ul class="coverslider hero-slider">
+                        <li><img src="https://www.uniqlo.com/jp/fashion/women/linen/sp/images/190226-19SS_linen_w_cover_01.jpg"
+                                alt="2019 UNIQLO 春夏 リラックススタイル ☓ リネンコレクション"></li>
+                        <li><img src="https://www.uniqlo.com/jp/fashion/women/linen/sp/images/190226-19SS_linen_w_cover_02.jpg"
+                                alt="2019 UNIQLO 春夏 リラックススタイル ☓ リネンコレクション"></li>
+                    </ul>
+                </h1>
+                <hr class="scroll">
+            </div>
+            <div id="linen">
+                <div class="section statement">
+                    <h2>Introducing our cool and comfortable linen collection of <br> relaxed styles in natural fabrics.
+                    </h2>
+                    <p class="textBox">Light, comfortable, and easy-to-care-for linen material is a staple for the
+                        coming months.<br>
+                        This season, our collection includes even more designs in three different fabrics.<br>
+                        Explore each material and our suggestions for how to wear them this spring and summer.</p>
+                </div>
+                <!-- INCLUDE// -->
+
+                <div class="section anker">
+                    <ul>
+                        <li>
+                            <a href="#fC100"
+                                class="track_click ga_cat-SP_jp_fashion_linen_women_link ga_act-anchor_fC100">
+                                <dl>
+                                    <dt>Premium Linen</dt>
+                                    <dd><img src="https://www.uniqlo.com/jp/fashion/women/linen/images/190226-19SS_linen_w_premiumlinen_anchor.jpg"
+                                            alt="プレミアムリネン"></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#fC101"
+                                class="track_click ga_cat-SP_jp_fashion_linen_women_link ga_act-anchor_fC101">
+                                <dl>
+                                    <dt>Linen Cotton</dt>
+                                    <dd><img src="https://www.uniqlo.com/jp/fashion/women/linen/images/190226-19SS_linen_w_linencotton_anchor.jpg"
+                                            alt="リネンコットン"></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#fC102"
+                                class="track_click ga_cat-SP_jp_fashion_linen_women_link ga_act-anchor_fC102">
+                                <dl>
+                                    <dt>Linen Blend</dt>
+                                    <dd><img src="https://www.uniqlo.com/jp/fashion/women/linen/images/190226-19SS_linen_w_linenblend_anchor.jpg"
+                                            alt="リネンブレンド"></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="fC100" class="categoryContainer">
+                    <div class="section categoryHeader">
+                        <p class="imageBox"><img
+                                src="https://www.uniqlo.com/jp/fashion/women/linen/images/190226-19SS_linen_w_premiumlinen_cover.jpg"
+                                alt="プレミアムリネン">
+                        </p>
+                        <h2><img src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_ttl.png"
+                                alt="Premium Linen"></h2>
+                        <p class="textBox">
+                            Finest-quality 100% linen at an affordable price. A simple, stylish shirt showcases the
+                            natural texture of the fabric.
+                            The excellent absorbency provides a cool, comfortable feel.
+                        </p>
+                        <p class="linkBtn">
+                            <a href="https://www.uniqlo.com/jp/store/feature/uq/premiumlinenspecial/" target="_blank"
+                                class="pcParts"><span><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-txtLink.png"
+                                        class="txtLink" alt="">Our premium linen fabric </span></a>
+                            <a href="https://www.uniqlo.com/jp/store/feature_mb/uq/fe_list/premiumlinenspecial"
+                                target="_blank" class="spParts"><span><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-txtLink.png"
+                                        class="txtLink" alt="">Our premium linen fabric </span></a>
+                        </p>
+                    </div>
+                    <div class="grid" >
+                        <div class="section itemSet" >
+                            <h3>Premium Linen Skipper Collar Shirt</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009352" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_mdl_01.jpg"
+                                        alt="プレミアムリネンスキッパーシャツ"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009352" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_mdl_01.jpg"
+                                        alt="プレミアムリネンスキッパーシャツ"></a>
+                            </p>
+                            <p class="textBox">Our new skipper collar shirt has dropped shoulders for a relaxed design.
+                                A stylish statement piece, try a size up for an on-trend oversized silhouette.</p>
+                            <button class="linkBtn"><a href=" /us/en/414171.html">Shop Now 〉</a></button>
+                        </div>
+                        <div class="section itemSet right" >
+                            <h3>Premium Linen Striped Skipper Collar Shirt</h3>
+                            <div class="slider">
+                                <ul class="product-slider">
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009358" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_slide_01-01.jpg"
+                                                alt="プレミアムリネンストライプスキッパーシャツ"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009358" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_slide_01-01.jpg"
+                                                alt="プレミアムリネンストライプスキッパーシャツ"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009358" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_slide_01-02.jpg"
+                                                alt="プレミアムリネンストライプスキッパーシャツ"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009358" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_slide_01-02.jpg"
+                                                alt="プレミアムリネンストライプスキッパーシャツ"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="textBox">Our new skipper collar shirt has dropped shoulders for a relaxed design.
+                                A stylish statement piece, try a size up for an on-trend oversized silhouette.</p>
+
+                            <button class="linkBtn"><a href=" /us/en/414170.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet" >
+                            <h3>Premium Linen Shirt</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009349" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_mdl_02.jpg"
+                                        alt="プレミアムリネンシャツ"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009349" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_mdl_02.jpg"
+                                        alt="プレミアムリネンシャツ"></a>
+                            </p>
+                            <p class="textBox">
+                                Our premium linen shirt is available in many colors and patterns. This soft pink
+                                contrasts well with dark denim, bringing a fresh touch to a simple, casual look.</p>
+                            <button class="linkBtn"><a href=" /us/en/414169.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet right" >
+                            <h3>Premium Linen Checked Shirt</h3>
+                            <div class="slider">
+                                <ul class="product-slider">
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009351" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_slide_02-01.jpg"
+                                                alt="プレミアムリネンチェックシャツ"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009351" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_slide_02-01.jpg"
+                                                alt="プレミアムリネンチェックシャツ"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009351" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_slide_02-02.jpg"
+                                                alt="プレミアムリネンチェックシャツ"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009351" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_slide_02-02.jpg"
+                                                alt="プレミアムリネンチェックシャツ"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="textBox">
+                                The crisp, natural texture of linen gives the gingham check an understated femininity.
+                                This shirt also looks great casually draped over
+                                your shoulders or tied around your waist.
+                            </p>
+                            <button class="linkBtn"><a href=" /us/en/414180.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet" >
+                            <h3>Premium Linen Sleeveless Shirt</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009350" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_mdl_03.jpg"
+                                        alt="プレミアムリネンシャツ(ノースリーブ)"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009350" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_premiumlinen_mdl_03.jpg"
+                                        alt="プレミアムリネンシャツ(ノースリーブ)"></a>
+                            </p>
+                            <p class="textBox">
+                                This basic sleeveless shirt looks great tucked in or out. Pair it with a cardigan and
+                                accessories in the same fresh tones for an elegant look.
+                            </p>
+
+                            <button class="linkBtn"><a href=" /us/en/414176.html">Shop Now 〉</a></button>
+
+                        </div>
+                    </div>
+                    <p class="linkBtn">
+                        <a href="/us/en/women/linen-collection#premuimlinen"><span><img
+                                    src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-txtLink.png"
+                                    class="txtLink" alt="">See all Premium Linen products</span></a>
+                    </p>
+                </div>
+                <div id="fC101" class="categoryContainer right">
+                    <div class="section categoryHeader">
+                        <p class="imageBox"><img
+                                src="https://www.uniqlo.com/jp/fashion/women/linen/images/190226-19SS_linen_w_linencotton_cover.jpg"
+                                alt="リネンコットン">
+                        </p>
+                        <h2><img src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_ttl.png"
+                                alt="Linen Cotton"></h2>
+                        <p class="textBox">
+                            We've got an even wider selection of bottoms this season, from our popular wide-leg pants to
+                            on-trend maxi skirts. Get the cool, soft feel of
+                            linen blended with cotton in comfortable, versatile pieces you can wear every day.
+                        </p>
+                    </div>
+                    <div class="grid" >
+                        <div class="section itemSet pcParts"></div>
+                        <div class="section itemSet" >
+                            <h3>Linen Cotton Blend Wide Left Belted Trousers</h3>
+                            <div class="slider">
+                                <ul class="product-slider">
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009345" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_01-01.jpg"
+                                                alt="ベルテッドリネンコットンワイドパンツ"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009345" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_01-01.jpg"
+                                                alt="ベルテッドリネンコットンワイドパンツ"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009345" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_01-02.jpg"
+                                                alt="ベルテッドリネンコットンワイドパンツ"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009345" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_01-02.jpg"
+                                                alt="ベルテッドリネンコットンワイドパンツ"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009345" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_01-03.jpg"
+                                                alt="ベルテッドリネンコットンワイドパンツ"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009345" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_01-03.jpg"
+                                                alt="ベルテッドリネンコットンワイドパンツ"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="textBox">
+                                Our popular wide-leg pants offer versatile styling options with or without the tie belt.
+                                Now available in a linen-cotton blend
+                                for spring/summer, you can create a light, natural look when you pair them with a
+                                brightly colored top.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/413124.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet right" >
+                            <h3>Linen Cotton Blend Tapered Trousers</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009344" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_mdl_01.jpg"
+                                        alt="リネンコットンテーパードパンツ"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009344" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_mdl_01.jpg"
+                                        alt="リネンコットンテーパードパンツ"></a>
+                            </p>
+                            <p class="textBox">
+                                This summery terracotta goes perfectly with the natural texture of linen cotton.
+                                Style with a casual T-shirt and a splash of pink to complete the look.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/414522.html">Shop Now 〉</a></button>
+
+
+                        </div>
+                        <div class="section itemSet" >
+                            <h3>Linen Cotton Blend Wide Leg Cropped Trousers</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009346" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_mdl_02.jpg"
+                                        alt="リネンコットンワイドクロップドパンツ"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009346" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_mdl_02.jpg"
+                                        alt="リネンコットンワイドクロップドパンツ"></a>
+                            </p>
+                            <p class="textBox">
+                                These cropped pants look like a skirt and are effortlessly stylish. Try a deep orange
+                                color for summer paired
+                                with layered tops and a belt to add depth to the ensemble.
+                            </p>
+
+                            <button class="linkBtn"><a href="/us/en/415491.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet right" >
+                            <h3>Linen Cotton Blend Shorts</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009347" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_mdl_03.jpg"
+                                        alt="リネンコットンショートパンツ"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009347" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_mdl_03.jpg"
+                                        alt="リネンコットンショートパンツ"></a>
+                            </p>
+                            <p class="textBox">
+                                Our comfy shorts have an elastic waist. The natural material looks stylish, even with a
+                                relaxed fit. Try pairing them
+                                with a white top, tucked in for a polished look.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/413137.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet" >
+                            <h3>Linen Cotton Maxi Skirt</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009348" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_mdl_04.jpg"
+                                        alt="リネンコットンロングスカート"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009348" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_mdl_04.jpg"
+                                        alt="リネンコットンロングスカート"></a>
+                            </p>
+                            <p class="textBox">
+                                Pairing this long skirt with a simple shirt highlights the beautiful silhouette. Keep
+                                the look minimal to bring out the
+                                earthy tones and texture of the linen cotton fabric.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/413127.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet right" >
+                            <h3>Linen Blend 3/4 Sleeve Dress</h3>
+                            <div class="slider">
+                                <ul class="product-slider">
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009356" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_02-01.jpg"
+                                                alt="リネンブレンドワンピース(7分袖)"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009356" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_02-01.jpg"
+                                                alt="リネンブレンドワンピース(7分袖)"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009356" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_02-02.jpg"
+                                                alt="リネンブレンドワンピース(7分袖)"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009356" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linencotton_slide_02-02.jpg"
+                                                alt="リネンブレンドワンピース(7分袖)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="textBox">
+                                In a lightweight, soft cotton blend, this shirt dress can be styled as a dress or an
+                                outer layer. Rolling the sleeves up adds a
+                                stylish touch.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/417906.html">Shop Now 〉</a></button>
+
+                        </div>
+                    </div>
+                    <p class="linkBtn">
+                        <a href="/us/en/women/linen-collection#bottoms"><span><img
+                                    src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-txtLink.png"
+                                    class="txtLink" alt="">See all Linen Cotton products</span></a>
+                    </p>
+                </div>
+                <div id="fC102" class="categoryContainer">
+                    <div class="section categoryHeader">
+                        <p class="imageBox"><img
+                                src="https://www.uniqlo.com/jp/fashion/women/linen/images/190226-19SS_linen_w_linenblend_cover.jpg"
+                                alt="リネンブレンド">
+                        </p>
+                        <h2><img src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_ttl.png"
+                                alt="Linen Blend"></h2>
+                        <p class="textBox">
+                            Our linen blend material has a beautiful, drape and a light, cool feel. From shirts to
+                            dresses, this hybrid collection
+                            combines the texture of linen with the drape of rayon.
+                        </p>
+                    </div>
+                    <div class="grid" >
+                        <div class="section itemSet" >
+                            <h3>LINEN BLEND 3/4 SLEEVE SHIRT</h3>
+                            <div class="slider">
+                                <ul class="product-slider">
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009353" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_01-01.jpg"
+                                                alt="リネンブレンドシャツ(7分袖)"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009353" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_01-01.jpg"
+                                                alt="リネンブレンドシャツ(7分袖)"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009353" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_01-02.jpg"
+                                                alt="リネンブレンドシャツ(7分袖)"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009353" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_01-02.jpg"
+                                                alt="リネンブレンドシャツ(7分袖)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="textBox">
+                                This linen blend shirt looks great paired with a gathered skirt that has a subtle sheen.
+                                The different textures
+                                create a subtle contrast in this pale, neutral-colored outfit.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/414173.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet right" >
+                            <h3>Linen Blend Short Sleeve Blouse</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009354" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_mdl_01.jpg"
+                                        alt="リネンブレンドブラウス（半袖）"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009354" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_mdl_01.jpg"
+                                        alt="リネンブレンドブラウス（半袖）"></a>
+                            </p>
+                            <p class="textBox">
+                                Pair a boxy linen blend blouse with jeans for a simple and stylish look. The French
+                                sleeves add a light touch.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/415569.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet" >
+                            <h3>Linen Blend Sleeveless Blouse</h3>
+                            <div class="slider">
+                                <ul class="product-slider">
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009365" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_02-01.jpg"
+                                                alt="リネンブレンドブラウス(ノースリーブ)"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009365" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_02-01.jpg"
+                                                alt="リネンブレンドブラウス(ノースリーブ)"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009365" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_02-02.jpg"
+                                                alt="リネンブレンドブラウス(ノースリーブ)"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009365" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_02-02.jpg"
+                                                alt="リネンブレンドブラウス(ノースリーブ)"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="textBox">
+                                This sleeveless top is gathered to emphasize the softness and drape of the linen blend
+                                fabric. The gathers at the front create flowing
+                                vertical lines for a flattering effect.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/414175.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet right" >
+                            <h3>Linen Blend Short Sleeve Long Shirt</h3>
+                            <p class="imageBox">
+                                <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009355" class="pcParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_mdl_02.jpg"
+                                        alt="リネンブレンドロングシャツ（半袖）"></a>
+                                <a href="//www.uniqlo.com/jp/shopbylook/10009355" class="spParts"><img
+                                        src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_mdl_02.jpg"
+                                        alt="リネンブレンドロングシャツ（半袖）"></a>
+                            </p>
+                            <p class="textBox">
+                                This long shirt can also be worn as a dress. The linen blend has a beautiful drape,
+                                perfect for slipping over your shoulders
+                                for an on-trend style.
+                                <br>
+                                Try pairing with leggings for a casual layered look
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/417748.html">Shop Now 〉</a></button>
+
+                        </div>
+                        <div class="section itemSet center" >
+                            <h3>Linen Blend A-Line Sleeveless Dress</h3>
+                            <div class="slider">
+                                <ul class="product-slider">
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009357" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_03-01.jpg"
+                                                alt="リネンブレンドAラインワンピース"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009357" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_03-01.jpg"
+                                                alt="リネンブレンドAラインワンピース"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009357" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_03-02.jpg"
+                                                alt="リネンブレンドAラインワンピース"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009357" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_03-02.jpg"
+                                                alt="リネンブレンドAラインワンピース"></a>
+                                    </li>
+                                    <li>
+                                        <a href="//www.uniqlo.com/jp/stylingbook/pc/style/10009357" class="pcParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_03-03.jpg"
+                                                alt="リネンブレンドAラインワンピース"></a>
+                                        <a href="//www.uniqlo.com/jp/shopbylook/10009357" class="spParts"><img
+                                                src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_linenblend_slide_03-03.jpg"
+                                                alt="リネンブレンドAラインワンピース"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="textBox">
+                                Wear this dress without the belt for a more relaxed look, or tie it in a bow for a
+                                smarter look. Whichever way you wear it,
+                                the dress showcases the lovely drape of our linen-rayon blend.
+                            </p>
+                            <button class="linkBtn"><a href="/us/en/417695.html">Shop Now 〉</a></button>
+
+                        </div>
+                    </div>
+                    <p class="linkBtn">
+                        <a href=" /us/en/women/linen-collection"><span><img
+                                    src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-txtLink.png"
+                                    class="txtLink" alt="">See all Linen Blend products</span></a>
+                    </p>
+                    <p class="linkBtn solid">
+                        <a href=" /us/en/women/linen-collection"><span><img
+                                    src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-txtLink.png"
+                                    class="txtLink" alt="">See all products</span></a>
+                    </p>
+                    <!-- <div class="section bannerSection">
+
+                        <h2>2019 UNIQLO<br class="spParts">
+                            SPRING SUMMER STYLE</h2>
+                        <dl>
+                            
+                            <a href="//www.uniqlo.com/jp/fashion/women/">
+                                <dt><img src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_bnr_01.jpg"
+                                        alt="オーバーサイズ×レギンス"></dt>
+                                <dd>Oversized Tops and Leggings</dd>
+                            </a>
+                            <a href="#top"
+                                class="track_click ga_cat-SP_jp_fashion_women_linen_190226-19SS_linen_w_bnr_02 ga_act-OT__jp_fashion_women_linen">
+                                <dt><img src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190226-19SS_linen_w_bnr_02.jpg"
+                                        alt="リネンコレクション"></dt>
+                                <dd>Linen Collection</dd>
+                            </a>
+                            <a href="//www.uniqlo.com/jp/news/topics/2019030601/">
+                                <dt><img src="https://www.uniqlo.com/jp/fashion/women/linen/common_images/190308-19SS_linen_w_bnr_03.jpg"
+                                        alt="心地よい風合いを楽しむ リネンコレクション"></dt>
+                                <dd>Featured Items</dd>
+
+                            </a>
+                        </dl>
+                    </div> -->
+
+                </div>
+
+            </div>
+            <!-- // end contents -->
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+            </script>
+            <script>
+                $('a[href*="#"]').on('click', function (e) {
+                    e.preventDefault()
+                    $('html, body').animate({
+                            scrollTop: $($(this).attr('href')).offset().top - 50,
+                        },
+                        1000,
+                        'linear'
+                    )
+                })
+
+                $(function () {
+                    $('.hero-slider').slick({
+                        autoplay: true,
+                        autoplaySpeed: 2500,
+                        dots: false,
+                        prevArrow: false,
+                        nextArrow: false
+                    });
+                });
+                $(function () {
+                    $('.product-slider').slick({
+                        dots: true,
+                        nextArrow: '<button class="slick-prev slick-arrow"></button>',
+                        prevArrow: '<button class="slick-next slick-arrow"></button>',
+                    });
+                });
+            </script>
+        </div>
+
+</body>
+
+</html>
